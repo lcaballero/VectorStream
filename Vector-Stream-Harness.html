@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Artistic</title>
+	<link href="Styles/Reset.css" rel="stylesheet" type="text/css"/>
+	<link href="Styles/SimpleControls.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+	<div class="floatLeft">
+		<canvas id="canvas" width="600" height="400">
+		</canvas>
+	</div>
+
+	<div class="buttons" style="clear:left;">
+		<button class="draw-cartesian-graph" onclick="$('#canvas').cartesianGraph()">
+			Draw Graph
+		</button>
+		<button class="draw-polar-graph" onclick="$('#canvas').cartesianGraph()">
+			Draw Polar Coords
+		</button>
+	</div>
+
+	<div class="none">
+		<textarea cols="80" rows="150">
+		</textarea>
+	</div>
+
+	<script src="Scripts/jquery-1.8.2.min.js" type="text/javascript"> </script>
+	<script src="Scripts/_.js" type="text/javascript"> </script>
+	<script src="Scripts/_.Default.Mixins.js" type="text/javascript"> </script>
+
+	<script src="Src/Colors.js" type="text/javascript"> </script>
+	<script src="Src/General.Plugins.js" type="text/javascript"> </script>
+	<script src="Src/Vector.Stream.Writer.js" type="text/javascript"> </script>
+	<script src="Src/Vec.js" type="text/javascript"> </script>
+
+	<script src="PMs/Cartesian-Coords.js" type="text/javascript"> </script>
+
+</body>
+</html>
