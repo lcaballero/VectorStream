@@ -4,7 +4,7 @@
 
 ```javascript
 
-	$('#canvas').stream();
+$('#canvas').stream();
 
 ```
 
@@ -12,15 +12,15 @@
 
 ```javascript
 
-	$("#canvas")
-		.stream()
-		.write([
-			"beginPath",
-				{ method:"moveTo", args:[0, 0] },
-				{ method:"lineTo", args:[dim.x, dim.y] },
-			"stroke"
-		])
-		.flush();
+$("#canvas")
+	.stream()
+	.write([
+		"beginPath",
+			{ method:"moveTo", args:[0, 0] },
+			{ method:"lineTo", args:[dim.x, dim.y] },
+		"stroke"
+	])
+	.flush();
 
 ```
 
